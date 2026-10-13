@@ -1,6 +1,7 @@
 package com.rutikrokade.projects.AirBnbApp.service;
 
 import com.rutikrokade.projects.AirBnbApp.dto.HotelDto;
+import com.rutikrokade.projects.AirBnbApp.dto.HotelInfoDto;
 
 public interface HotelService {
     HotelDto createNewHotel(HotelDto hotelDto);
@@ -12,4 +13,6 @@ public interface HotelService {
     void deleteHotelById(Long id);
 
     void activateHotel(Long id);
+
+    HotelInfoDto getHotelInfoById(Long hotelId);
 }
