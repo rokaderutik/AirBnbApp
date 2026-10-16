@@ -1,6 +1,7 @@
 package com.rutikrokade.projects.AirBnbApp.service;
 
 import com.rutikrokade.projects.AirBnbApp.dto.RoomDto;
+import org.jspecify.annotations.Nullable;
 
 import java.util.List;
 
@@ -14,4 +15,5 @@ public interface RoomService {
 
     void deleteRoomById(Long roomId);
 
+    RoomDto updateRoomById(Long hotelId, Long roomId, RoomDto roomDto);
 }
